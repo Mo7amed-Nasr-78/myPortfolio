@@ -45,7 +45,7 @@ const Header = ({ scrollY }: props) => {
             animate={{ opacity: 1, y: '0px', transition: { duration: 0.5, type: 'keyframes' } }}
             className={`fixed top-0 right-0 left-0 z-30 flex items-center justify-center duration-200 ease-in-out ${scrollY > 0? 'bg-primaryColor': 'bg-transparent'}`}
         >
-            <div className={`container relative flex items-center justify-between py-1 ${scrollY > 0? 'before:bg-gradient-to-r': 'before:bg-none'} before:absolute xl:before:w-custom-100/8 sm:before:w-custom-100/2 before:w-custom-100/1 before:h-[1px] before:rounded-full before:from-secondaryColor before:via-accentColor before:to-secondaryColor xl:before:left-16 sm:before:left-4 before:left-2 before:-bottom-[1px] before:duration-1000 before:ease-in-out`}>
+            <div className={`container h-full relative flex items-center justify-between py-1 ${scrollY > 0? 'before:bg-gradient-to-r': 'before:bg-none'} before:absolute xl:before:w-custom-100/8 sm:before:w-custom-100/2 before:w-custom-100/1 before:h-[1px] before:rounded-full before:from-secondaryColor before:via-accentColor before:to-secondaryColor xl:before:left-16 sm:before:left-4 before:left-2 before:-bottom-[1px] before:duration-1000 before:ease-in-out`}>
                 <div>
                     <motion.svg
                         height="40px"
