@@ -30,7 +30,7 @@ const About = () => {
                         whileInView={{ opacity: 1, x: 0, transition: { duration: 0.8, type: 'spring', stiffness: 150 }}}
                         className="relative xl:w-[40%] lg:w-[40%] md:w-[70%] sm:w-[80%]"
                     >
-                        <img src="/About_photo.svg" alt="aboutPhoto" className="w-full h-full obejct-cover object-center"/>
+                        <img src="./About_photo.svg" alt="aboutPhoto" className="w-full h-full obejct-cover object-center"/>
                     </motion.div>
                     <div className="flex items-start justify-center flex-col xl:w-[60%] lg:w-[58%]">
                         <motion.h2 

@@ -21,10 +21,10 @@ export const heroCards = [
 
 
 export const socialIcons = [
-    {id: 1, title: 'linkedin',icon: '/linkedin.svg', link: '#'},
-    {id: 2, title: 'facebook',icon: '/facebook.svg', link: '#'},
-    {id: 3, title: 'twitter-x',icon: '/x.svg', link: '#'},
-    {id: 4, title: 'instagram',icon: '/instagram.svg', link: '#'},
+    {id: 1, title: 'linkedin',icon: './linkedin.svg', link: '#'},
+    {id: 2, title: 'facebook',icon: './facebook.svg', link: '#'},
+    {id: 3, title: 'twitter-x',icon: './x.svg', link: '#'},
+    {id: 4, title: 'instagram',icon: './instagram.svg', link: '#'},
 ]
 
 export const servicesCards = [
