@@ -34,10 +34,6 @@ const Hero = () => {
         setInterval(jobTitlesLoad, 20000);
     }, []);
 
-    // bg-[url(/Hero_Shadow.svg)]
-    // md:bg-md-size xl:bg-contain bg-no-repeat lg:bg-[90%] md:bg-top
-    // bg-gradient-to-br from-accentColor via-cherryPie to-lightGold 
-
     return (
         <section id='home' className="relative min-h-screen w-screen overflow-hidden xl:pb-10 bg-transparent flex items-center justify-center md:flex-col before:absolute before:left-0 before:-bottom-10 before:w-full before:h-28 before:bg-gradient-to-b before:from-transparent before:to-primaryColor">
             <div className="absolute lg:top-[50%] top-[20%] z-[2] lg:translate-y-[-55%] translate-y-[-20%] xl:-right-6 lg:-right-[60px] md:-right-[-50%] md:translate-x-[50%] lg:translate-x-[-50%] w-72 h-72 rounded-full blur-[90px] animate-shadowAnimate opacity-40"></div>
@@ -45,7 +41,7 @@ const Hero = () => {
                 <motion.div 
                     initial={{ opacity: 0, scale: 0.9}}
                     animate={{ opacity: 1, scale: 1, transition: { delay: 1,duration: 0.5, type: 'spring', damping: 6, mass: 0.5 } }}
-                    className="relative md:w-[600px] lg:w-[1200px] xl:w-[1200px] lg:mt-10 md:mt-14 mt-16 select-none z-[3]"
+                    className="relative md:w-[600px] lg:w-[1200px] xl:w-[1200px] lg:mt-10 md:mt-14 mt-12 select-none z-[3]"
                     >
                     <img
                         src="./Hero_Photo_2.svg"

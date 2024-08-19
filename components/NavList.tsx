@@ -33,7 +33,7 @@ const NavList = () => {
             <ul
                 className={`${
                     visible
-                        ? "absolute flex flex-col flex-start gap-1 p-2 sm:w-custom-100/2 w-custom-100/1 -bottom-[321.4px] sm:right-4 right-2 bg-gradient-to-br from-[#0e2f46] to-primaryColor border-b-[3px] border-accentColor rounded-br-sm rounded-bl-sm"
+                        ? "absolute flex flex-col flex-start gap-1 p-2 sm:w-custom-100/2 w-custom-100/1 top-full sm:right-4 right-2 bg-gradient-to-br from-[#0e2f46] to-primaryColor border-b-[3px] border-accentColor rounded-br-sm rounded-bl-sm"
                         : "h-full hidden lg:flex list-none items-center justify-center relative"
                 }`}
             >

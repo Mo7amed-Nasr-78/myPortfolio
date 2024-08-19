@@ -20,7 +20,7 @@ const FastCards = () => {
                                     <p className='xl:text-sm lg:text-sm md:text-lg font-light xl:mb-6 lg:mb-3 mb-4 sm:text-left text-center'>{ des }</p>
                                     <motion.button 
                                         whileHover={{ scale: 0.95, transition: { duration: 0.5, type: 'spring', damping: 6, mass: 0.5 } }}
-                                        className='flex items-center justify-center xl:w-36 lg:w-32 md:w-[230px] w-[200px] lg:py-1 md:py-1 lg:px-5 md:px-3 rounded-lg text-primaryColor xl:text-sm lg:text-sm capitalize font-bold bg-accentColor hover:bg-[#0D9AF9]'
+                                        className='flex items-center justify-center xl:w-36 lg:w-32 md:w-[230px] w-[200px] lg:py-1 py-1 lg:px-5 md:px-3 rounded-lg text-primaryColor xl:text-sm lg:text-sm capitalize font-bold bg-accentColor hover:bg-[#0D9AF9]'
                                     >{ title }</motion.button>
                                 </div>
                                 <div className='relative xl:w-56 md:w-96 sm:w-80'>
