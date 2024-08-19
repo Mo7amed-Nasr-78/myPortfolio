@@ -21,10 +21,10 @@ export const heroCards = [
 
 
 export const socialIcons = [
-    {id: 1, title: 'linkedin',icon: './linkedin.svg', link: '#'},
-    {id: 2, title: 'facebook',icon: './facebook.svg', link: '#'},
-    {id: 3, title: 'twitter-x',icon: './x.svg', link: '#'},
-    {id: 4, title: 'instagram',icon: './instagram.svg', link: '#'},
+    {id: 1, title: 'linkedin',icon: './linkedin.svg', link: 'https://www.linkedin.com/in/mohamed-nasr-1682ab239'},
+    {id: 2, title: 'facebook',icon: './facebook.svg', link: 'https://www.facebook.com/profile.php?id=100081452508411'},
+    {id: 3, title: 'twitter-x',icon: './x.svg', link: 'https://x.com/Mohamed_nasr_78'},
+    {id: 4, title: 'instagram',icon: './instagram.svg', link: 'https://www.instagram.com/mo7amed_nasr_74/'},
 ]
 
 export const servicesCards = [
