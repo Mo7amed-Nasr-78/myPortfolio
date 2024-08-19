@@ -58,7 +58,7 @@ const Hero = () => {
                     <motion.h1 
                         initial={{ opacity: 0, x: "-100%" }}
                         animate={{ opacity: 1, x: 0, transition: { type: 'ease', dration: 0.3 }}}
-                        className="capitalize text-2xl sm:text-5xl lg:text-5xl xl:text-6xl sm:font-semibold font-bold mb-2"
+                        className="capitalize text-3xl sm:text-5xl lg:text-5xl xl:text-6xl sm:font-semibold font-bold mb-2"
                         >
                         Hello, i&apos;m <br /> {" "}
                         <span className="bg-clip-text bg-gradient-to-r from-secondaryColor to-richMaroom text-transparent">
@@ -91,12 +91,12 @@ const Hero = () => {
                             initial={{ opacity: 0, x: '-100%'}}
                             animate={{ opacity: 1, x: 0, transition: { duration: 0.8, type: 'ease' } }}
                             whileHover={{ scale: 1.05, transition: { duration: 0.5, type: 'spring' } }}
-                            className="relative w-36 h-9 rounded-lg capitalize overflow-hidden md:mr-6 mx-auto md:mx-0 group"
+                            className="relative w-36 h-9 p-[2px] rounded-lg capitalize overflow-hidden md:mr-6 mx-auto md:mx-0 before:absolute before:w-[250px] before:h-[250px] before:-top-[102px] before:-left-[17px] before:bg-gradient-to-r before:from-lightGold hover:before:from-secondaryColor hover:before:via-primaryColor before:to-cherryPie hover:before:to-accentColor before:animate-spin"
                             >
-                            <span className="absolute top-0 left-0 w-full h-full overflow-hidden before:absolute before:w-[250px] before:h-[250px] before:-top-[102px] before:-left-[17px] before:bg-gradient-to-r before:from-lightGold group-hover:before:from-secondaryColor group-hover:before:via-primaryColor before:to-cherryPie group-hover:before:to-accentColor before:animate-spin after:absolute after:top-[2px] after:left-[2px] after:w-[212px] after:h-[50px] after:bg-primaryColor after:rounded-lg after:duration-75">
+                            <span className="absolute top-[2px] left-[2px] bg-primaryColor rounded-lg" style={{ width: 'calc(100% - 4px)', height: 'calc(100% - 4px)' }}>
                                 <a
-                                    href="#projects"
-                                    className="relative flex items-center justify-center w-full h-full appearance-none text-secondaryColor text-sm font-light z-10 duration-300 ease-in-out"
+                                    href="#contact"
+                                    className="relative flex items-center justify-center w-full h-full text-secondaryColor text-sm font-light z-10 duration-300 ease-in-out"
                                 >
                                     hire me
                                 </a>

@@ -54,7 +54,7 @@ const Services = () => {
                                             >
                                                 {subtitle}
                                             </motion.h4>
-                                            <p className="text-secondaryColor text-opacity-[0.4] w-full lg:text-xs md:text-sm text-[18px] text-light xl:tracking-widest md:tracking-wide tracking-widest lg:leading-[30px] leading-5">
+                                            <p className="text-secondaryColor text-opacity-40 w-full lg:text-xs md:text-sm text-[18px] text-light xl:tracking-widest md:tracking-wide tracking-widest lg:leading-[30px] leading-6">
                                                 {des}
                                             </p>
                                         </div>

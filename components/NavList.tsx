@@ -41,7 +41,7 @@ const NavList = () => {
                     <div className="flex items-center gap-1">
                         <div className="relaive w-7 h-7 rounded-full overflow-hidden">
                             <img
-                                src="/menu_image.png"
+                                src="./menu_image.png"
                                 alt="menu_image"
                                 className="w-full h-full object-cover object-center"
                             />
@@ -55,7 +55,7 @@ const NavList = () => {
                             </h4>
                         </div>
                     </div>
-                    <a href="#about">
+                    <a href="#about" className="sm:block hidden">
                         <div className="w-7 h-7 flex items-center justify-center group rounded-full bg-[#4169E1] bg-opacity-[0.3] cursor-pointer">
                             <IoPersonCircle className="w-5 h-5 text-secondaryColor group-hover:text-accentColor" />
                         </div>
