@@ -7,7 +7,7 @@ const Projects = () => {
     return (
         <section id="projects" className="min-h-screen scroll-mt-8">
             <div className="container">
-                <div>
+                <div className="text-center sm:text-start">
                     <motion.h2
                         initial={{ opacity: 0, x: "-100%" }}
                         whileInView={{
@@ -20,7 +20,7 @@ const Projects = () => {
                                 mass: 0.6,
                             },
                         }}
-                        className="md:text-5xl md:mb-2 w-fit font-normal text-2xl bg-clip-text bg-gradient-to-r from-secondaryColor to-accentColor text-transparent capitalize"
+                        className="md:text-5xl md:mb-2 w-fit font-normal text-4xl bg-clip-text bg-gradient-to-r from-secondaryColor to-accentColor text-transparent capitalize mx-auto sm:mx-0"
                     >
                         Projects
                     </motion.h2>
@@ -96,7 +96,7 @@ const Projects = () => {
                                             {" "}
                                             {title}{" "}
                                         </h2>
-                                        <p className="sm:hidden text-sm font-light text-opacity-5 mb-4">
+                                        <p className="sm:hidden text-sm font-light text-secondaryColor text-opacity-75 tracking-wide mb-4 first-letter:capitalize">
                                             {" "}
                                             {des}{" "}
                                         </p>

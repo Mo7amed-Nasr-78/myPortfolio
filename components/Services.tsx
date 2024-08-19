@@ -6,11 +6,11 @@ const Services = () => {
     return (
         <section id="services" className="min-h-screen py-10">
             <div className="container">
-                <div>
+                <div className="text-center sm:text-start">
                     <motion.h2 
                         initial={{ opacity: 0, x: '-100%' }}
                         whileInView={{ opacity: 1, x: 0, transition: { duration: 0.5, type: 'spring', damping: 7, mass: 0.6 } }}
-                        className="md:text-5xl text-4xl mb-2 w-fit font-normal bg-clip-text bg-gradient-to-r from-secondaryColor to-accentColor text-transparent capitalize"
+                        className="md:text-5xl text-4xl mb-2 w-fit font-normal bg-clip-text bg-gradient-to-r from-secondaryColor to-accentColor text-transparent capitalize mx-auto sm:mx-0"
                     >
                         services
                     </motion.h2>

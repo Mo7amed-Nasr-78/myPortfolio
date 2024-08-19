@@ -6,7 +6,7 @@ const Contact = () => {
     return (
         <section id="contact" className="min-h-screen scroll-mt-10">
             <div className="container">
-                <div>
+                <div className="text-center sm:text-start">
                     <motion.h2
                         initial={{ opacity: 0, x: "-100%" }}
                         whileInView={{
@@ -19,7 +19,7 @@ const Contact = () => {
                                 mass: 0.6,
                             },
                         }}
-                        className="md:text-5xl text-4xl mb-2 w-fit font-normal bg-clip-text bg-gradient-to-r from-secondaryColor to-accentColor text-transparent capitalize"
+                        className="md:text-5xl text-4xl mb-2 w-fit font-normal bg-clip-text bg-gradient-to-r from-secondaryColor to-accentColor text-transparent capitalize mx-auto sm:mx-0"
                     >
                         contact
                     </motion.h2>
@@ -58,7 +58,7 @@ const Contact = () => {
                                         type: "ease",
                                     },
                                 }}
-                                className="md:w-full text-sm md:tracking-wider text-secondaryColor text-opacity-[0.75]"
+                                className="md:w-full text-sm md:tracking-wider text-secondaryColor text-opacity-50 tracking-wide"
                             >
                                 Feel free to reach out with any questions or
                                 project ideas. I&apos;m excited to hear from you
@@ -88,7 +88,7 @@ const Contact = () => {
                                         type: "ease",
                                     },
                                 }}
-                                className="xl:w-80 text-secondaryColor text-opacity-[0.75]"
+                                className="xl:w-80 w-full text-sm text-secondaryColor text-opacity-50"
                             >
                                 mohamed.ibrahim.nasr2020@gmail.com
                             </motion.p>

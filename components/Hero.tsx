@@ -81,7 +81,7 @@ const Hero = () => {
                     <motion.p 
                         initial={{ opacity: 0, x: '-100%' }}
                         animate={{ opacity: 1, x: 0, transition: { type: 'ease', duration: 0.6 } }}
-                        className="first-letter:capitalize mt-2 mb-4 xl:text-lg lg:text-sm md:text-xs text-[20px] text-secondaryColor font-light"
+                        className="first-letter:capitalize mt-2 mb-4 xl:text-lg lg:text-sm md:text-xs text-[16px] tracking-wide text-secondaryColor font-light"
                         >
                         Take a look at my work and let&apos;s discuss <br /> how
                         we can make your vision a reality.
@@ -120,7 +120,7 @@ const Hero = () => {
                     </div>
                 </div>
 
-                <div className="absolute flex items-center lg:gap-2 md:gap-10 xl:bottom-2 xl:left-16 lg:left-4 left-[50%] translate-x-[-50%] md:translate-x-0 lg:bottom-0 md:bottom-8 -bottom-14 md:left-[90%]">
+                <div className="absolute flex items-center lg:gap-2 md:gap-10 xl:bottom-2 xl:left-16 lg:left-4 left-[50%] translate-x-[-50%] md:translate-x-0 lg:bottom-0 md:bottom-8 -bottom-12 md:left-[90%]">
                     <div className="flex items-center lg:gap-3 gap-4 md:flex-col lg:flex-row">
                         {socialIcons.map(({ id, title, icon, link }) => {
                             return (

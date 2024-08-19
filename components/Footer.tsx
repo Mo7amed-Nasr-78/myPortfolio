@@ -27,7 +27,7 @@ const Footer = () => {
                         })
                     }
                 </div>
-                <div className='flex items-center lg:gap-5 md:gap-4 gap-3'>
+                <div className='flex items-center justify-center lg:gap-5 md:gap-4 gap-3 flex-wrap'>
                     {
                         navItems.map(({ title, link }, idx) => {
                             return (
@@ -42,9 +42,9 @@ const Footer = () => {
                     }
                 </div>
                 <span className='w-full h-[2px] rounded-full bg-accentColor my-5'></span>
-                <div className='flex items-center xl:gap-3 gap-2'>
-                    <MdEmail className='text-accentColor xl:w-6 xl:h-6'/>
-                    <span className='text-secondaryColor xl:text-sm text-xs tracking-wide'>mohamed.ibrahim.nasr2020@gmail.com</span>
+                <div className='flex items-center flex-col sm:flex-row xl:gap-3 gap-2'>
+                    <MdEmail className='text-accentColor xl:w-6 xl:h-6 w-8 h-8'/>
+                    <span className='text-secondaryColor xl:text-sm text-[16px] tracking-wide'>mohamed.ibrahim.nasr2020@gmail.com</span>
                 </div>
             </div>
         </footer>

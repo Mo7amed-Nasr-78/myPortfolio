@@ -10,12 +10,12 @@ export const heroCards = [
     {
         title: 'design',
         des: 'If you want to make a design of your website',
-        illustration: './design.svg'
+        illustration: './Design.svg'
     },
     {
         title: 'code',
         des: 'If you have a design and want to get it reality',
-        illustration: './code.svg'
+        illustration: './Code.svg'
     },
 ]
 
@@ -57,7 +57,7 @@ export const servicesCards = [
 export const projectCards = [
     { id: 1, title: 'real estate', des: 'you can visit the project live and i’m going to be glad with your feedback', gitIcon: './github.svg', whatsIcon: './whats.svg', img: './Project_two.png', rep: 'https://github.com/Mo7amed-Nasr-78/CarWebsite', link: 'https://mo7amed-nasr-78.github.io/CarWebsite/'},
     { id: 2, title: 'carOwnerShip', des: 'you can visit the project live and i’m going to be glad with your feedback', gitIcon: './github.svg', whatsIcon: './whats.svg', img: './Project_one.png', rep: 'https://github.com/Mo7amed-Nasr-78/RealEstates_site', link: 'https://mo7amed-nasr-78.github.io/RealEstates_site/'},
-    { id: 3, title: 'portfolio', des: 'you can visit the project live and i’m going to be glad with your feedback', gitIcon: './github.svg', whatsIcon: './whats.svg', img: './portfolio_poster_2.png', rep: '', link: ''},
+    { id: 3, title: 'portfolio', des: 'you can visit the project live and i’m going to be glad with your feedback', gitIcon: './github.svg', whatsIcon: './whats.svg', img: './Portfolio_Poster_2.png', rep: 'https://github.com/Mo7amed-Nasr-78/myPortfolio', link: 'https://mo7amed-nasr-78.github.io/myPortfolio/'},
     { id: 4, title: 'furniture', des: 'you can visit the project live and i’m going to be glad with your feedback', gitIcon: './github.svg', whatsIcon: './whats.svg', img: './Project_Four.png', rep: '', link: ''},
 ]
 
