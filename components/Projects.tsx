@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 
 const Projects = () => {
     return (
-        <section id="projects" className="scroll-mt-8 mb-32 scroll-mt-24">
+        <section id="projects" className="mb-32 scroll-mt-24">
             <div className="container">
                 <div className="text-center sm:text-start mt-5 mb-8">
                     <motion.h2
@@ -20,7 +20,7 @@ const Projects = () => {
                                 mass: 0.6,
                             },
                         }}
-                        className="md:text-6xl mb-2 w-fit font-normal text-4xl bg-clip-text bg-gradient-to-r from-primaryColor to-primaryColor text-transparent capitalize mx-auto sm:mx-0"
+                        className="md:text-6xl mb-2 w-fit font-normal text-4xl bg-clip-text bg-gradient-to-r from-primaryText to-primaryColor text-transparent capitalize mx-auto sm:mx-0"
                     >
                         Projects
                     </motion.h2>

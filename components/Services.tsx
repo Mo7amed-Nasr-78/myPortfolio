@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 const Services = () => {
     return (
-        <section id="services" className="min-h-screen py-6">
+        <section id="services" className="min-h-screen py-6 scroll-mt-16">
             <div className="container">
                 <div className="text-center sm:text-start mt-5 mb-16">
                     <motion.h2 

@@ -2,7 +2,6 @@
 import React, { useState, useEffect } from "react";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
-import FastCards from "@/components/FastCards";
 import About from "@/components/About";
 import Services from "@/components/Services";
 import Projects from "@/components/Projects";
@@ -30,7 +29,6 @@ export default function Home() {
             {/* <div className="max-w-7xl w-full"> */}
                 <Header scrollY={scrollY} />
                 <Hero />
-                {/* <FastCards /> */}
                 <Services />
                 <About />
                 <Projects />

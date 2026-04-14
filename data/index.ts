@@ -76,7 +76,7 @@ export const servicesCards = [
 	{
 		title: "UI/UX",
 		des: "I design clean, user-centered interfaces that focus on clarity, usability, and smooth interaction. From wireframes to final layouts, I ensure every screen feels natural and engaging.",
-		icon: "./ui-ux.svg",
+		icon: "./UI-UX.svg",
 	},
 ];
 
@@ -88,51 +88,51 @@ export const aboutTabs = [
 		skills: [
 			{
 				alt: "html_icon",
-				icon: "./html-5.svg"
+				icon: "./skills/html-5.svg"
 			},
 			{
 				alt: "css_icon",
-				icon: "./css-3.svg"
+				icon: "./skills/css-3.svg"
 			}, 
 			{
 				alt: "react_icon",
-				icon: "./react.svg"
+				icon: "./skills/react.svg"
 			}, 
 			{
 				alt: "javascript_icon",
-				icon: "./js.svg"
+				icon: "./skills/js.svg"
 			}, 
 			{
 				alt: "next_icon",
-				icon: "./next_.svg",
+				icon: "./skills/next_.svg",
 			},
 			{
 				alt: "nodejs_icon",
-				icon: "./nodejs.svg"
+				icon: "./skills/nodejs.svg"
 			}, 
 			{
 				alt: "expressjs_icon",
-				icon: "./express.svg"
+				icon: "./skills/express.svg"
 			}, 
 			{
 				alt: "nestjs_icon",
-				icon: "./nest.svg"
+				icon: "./skills/nest.svg"
 			}, 
 			{
 				alt: "mysql_icon",
-				icon: "./mysql.svg"
+				icon: "./skills/mysql.svg"
 			}, 
 			{
 				alt: "microsoftsqlserver_icon",
-				icon: "./microsoftsqlserver.svg"
+				icon: "./skills/microsoftsqlserver.svg"
 			}, 
 			{
 				alt: "mongoDB_icon",
-				icon: "./mongodb.svg"
+				icon: "./skills/mongodb.svg"
 			}, 
 			{
 				alt: "postgresql_icon",
-				icon: "./postgresql.svg"
+				icon: "./skills/postgresql.svg"
 			}, 
 			],
 		cvPath: './docs/MERN Developer.pdf'
@@ -141,7 +141,32 @@ export const aboutTabs = [
 		tab: "dev ops",
 		title: "Ensuring smooth deployment, monitoring, and scalability",
 		desc: "I manage hosting, CI/CD pipelines, testing, and cloud services to guarantee reliable delivery and continuous performance for every project.",
-		skills: [],
+		skills: [
+			{
+				alt: "amazonwebservices_icon",
+				icon: "./skills/amazonwebservices.svg"
+			},
+			{
+				alt: "nginx_icon",
+				icon: "./skills/nginx.svg"
+			},
+			{
+				alt: "azure_icon",
+				icon: "./skills/azure.svg"
+			},
+			{
+				alt: "git_icon",
+				icon: "./skills/git.svg"
+			},
+			{
+				alt: "github_icon",
+				icon: "./skills/github.svg"
+			},
+			{
+				alt: "firebase_icon",
+				icon: "./skills/firebase.svg"
+			},
+		],
 		cvPath: './docs/ui-ux.pdf'
 	},
 	{
@@ -151,27 +176,27 @@ export const aboutTabs = [
 		skills: [
 			{
 				alt: "illustrator_icon",
-				icon: "./illustrator.svg"
+				icon: "./skills/illustrator.svg"
 			},
 			{
 				alt: "xd_icon",
-				icon: "./xd.svg"
+				icon: "./skills/xd.svg"
 			}, 
 			{
 				alt: "photoshop_icon",
-				icon: "./photoshop.svg"
+				icon: "./skills/photoshop.svg"
 			}, 
 			{
 				alt: "figma_icon",
-				icon: "./figma.svg"
+				icon: "./skills/figma.svg"
 			}, 
 			{
 				alt: "sketch_icon",
-				icon: "./sketch.svg",
+				icon: "./skills/sketch.svg",
 			},
 			{
 				alt: "miro_icon",
-				icon: "./miro.svg"
+				icon: "./skills/miro.svg"
 			}, 
 			],
 		cvPath: './docs/ui-ux.pdf'

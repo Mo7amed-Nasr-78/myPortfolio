@@ -6,7 +6,7 @@ import "./globals.css";
 const sora = Sora({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Mohamed's Portfolio",
+  title: "Mohamed Nasr",
   description: "",
   icons: './Logo.svg'
 };
