@@ -192,34 +192,40 @@ const About = () => {
 														}
 														initial="hidden"
 														whileInView="visible"
-														className="w-full flex gap-4 overflow-hidden overflow-x-auto scrollbar-hidden mb-12"
+														className="w-full mb-12 overflow-hidden"
 													>
-														{skills.map(
-															(
-																skill,
-																index,
-															) => {
-																return (
-																	<motion.div
-																		key={`skill-icon-${index}`}
-																		variants={
-																			skillItemVariants
-																		}
-																		className="min-w-20 min-h-20 flex items-center justify-center rounded-xl border border-primaryColor bg-transparent duration-300 hover:bg-primaryColor/10 hover:border-primaryColor/10"
-																	>
-																		<img
-																			src={
-																				skill.icon
+														<motion.div
+															animate={{ x: [0, "-50%"] }}
+															transition={{ duration: 16, repeat: Infinity, ease: "linear" }}
+															className="w-full flex gap-4 scrollbar-hidden"
+														>
+															{skills.map(
+																(
+																	skill,
+																	index,
+																) => {
+																	return (
+																		<motion.div
+																			key={`skill-icon-${index}`}
+																			variants={
+																				skillItemVariants
 																			}
-																			alt={
-																				skill.alt
-																			}
-																			className="h-10"
-																		/>
-																	</motion.div>
-																);
-															},
-														)}
+																			className="min-w-20 min-h-20 flex items-center justify-center rounded-xl border border-primaryColor bg-transparent duration-300 hover:bg-primaryColor/10 hover:border-primaryColor/10"
+																		>
+																			<img
+																				src={
+																					skill.icon
+																				}
+																				alt={
+																					skill.alt
+																				}
+																				className="h-10"
+																			/>
+																		</motion.div>
+																	);
+																},
+															)}
+														</motion.div>
 													</motion.div>
 													<motion.button
 														initial={{
