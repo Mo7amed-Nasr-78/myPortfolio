@@ -5,9 +5,9 @@ import { motion } from "framer-motion";
 
 const Projects = () => {
     return (
-        <section id="projects" className="min-h-screen scroll-mt-8">
+        <section id="projects" className="scroll-mt-8 mb-32 scroll-mt-24">
             <div className="container">
-                <div className="text-center sm:text-start">
+                <div className="text-center sm:text-start mt-5 mb-8">
                     <motion.h2
                         initial={{ opacity: 0, x: "-100%" }}
                         whileInView={{
@@ -20,7 +20,7 @@ const Projects = () => {
                                 mass: 0.6,
                             },
                         }}
-                        className="md:text-5xl md:mb-2 w-fit font-normal text-4xl bg-clip-text bg-gradient-to-r from-secondaryColor to-accentColor text-transparent capitalize mx-auto sm:mx-0"
+                        className="md:text-6xl mb-2 w-fit font-normal text-4xl bg-clip-text bg-gradient-to-r from-primaryColor to-primaryColor text-transparent capitalize mx-auto sm:mx-0"
                     >
                         Projects
                     </motion.h2>
@@ -30,13 +30,17 @@ const Projects = () => {
                             opacity: 1,
                             transition: { delay: 0.5, duration: 0.5 },
                         }}
-                        className="text-secondaryColor text-opacity-[0.8] mt-1 md:text-lg font-extralight"
+                        className="text-secondaryColor text-opacity-[0.8] mt-1 xl:text-xl text-lg font-extralight"
                     >
                         A Collection of Innovative and Impactful Projects
                     </motion.h3>
                 </div>
 
-                <div className="grid lg:grid-cols-2 md:grid-col-1 xl:gap-6 lg:gap-3 gap-10 py-16">
+                <div className="w-full h-[50vh] flex flex-col items-center justify-center gap-3 bg-primaryColor/5 rounded-3xl">
+                    <img src="./fixing.svg" alt="fixing-icon" className="h-24 animate-bounce"/>
+                    <h2 className="text-xl text-primaryText capitalize">under maintanace ...    </h2>
+                </div>
+                {/* <div className="grid lg:grid-cols-2 md:grid-col-1 xl:gap-6 lg:gap-3 gap-10">
                     {projectCards.map(
                         ({
                             id,
@@ -73,16 +77,16 @@ const Projects = () => {
                                             target="_blank"
                                         >
                                             <div
-                                                className="w-14 h-14 flex items-center justify-center bg-accentColor bg-opacity-[0.5] hover:bg-opacity-100 rounded-full"
+                                                className="w-20 h-20 flex items-center justify-center bg-accentColor bg-opacity-[0.5] hover:bg-opacity-100 rounded-full"
                                             >
-                                                <MdArrowOutward className="text-secondaryColor text-2xl" />
+                                                <MdArrowOutward className="text-secondaryColor text-3xl" />
                                             </div>
                                         </motion.a>
                                         <a href={rep} target="_blank">
                                             <img
                                                 src={gitIcon}
                                                 alt={title}
-                                                className="w-8 h-8 absolute right-5 bottom-5"
+                                                className="h-12 absolute right-5 bottom-5 hover:scale-110 transition ease-in-out"
                                             />
                                         </a>
                                     </div>
@@ -124,7 +128,7 @@ const Projects = () => {
                             );
                         }
                     )}
-                </div>
+                </div> */}
             </div>
         </section>
     );

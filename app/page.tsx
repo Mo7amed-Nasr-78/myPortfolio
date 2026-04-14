@@ -26,17 +26,17 @@ export default function Home() {
     }, [scrollY]);
 
     return (
-        <main className="relative flex items-center justify-center flex-col overflow-hidden bg-primaryColor">
-            <div className="max-w-7xl w-full">
+        <main className="relative overflow-hidden bg-bgColor">
+            {/* <div className="max-w-7xl w-full"> */}
                 <Header scrollY={scrollY} />
                 <Hero />
-                <FastCards />
-                <About />
+                {/* <FastCards /> */}
                 <Services />
+                <About />
                 <Projects />
                 <Contact />
                 <Footer />
-            </div>
+            {/* </div> */}
         </main>
     );
 }

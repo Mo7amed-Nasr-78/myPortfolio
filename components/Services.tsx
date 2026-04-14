@@ -4,60 +4,51 @@ import { motion } from "framer-motion";
 
 const Services = () => {
     return (
-        <section id="services" className="min-h-screen py-10">
+        <section id="services" className="min-h-screen py-6">
             <div className="container">
-                <div className="text-center sm:text-start">
+                <div className="text-center sm:text-start mt-5 mb-16">
                     <motion.h2 
                         initial={{ opacity: 0, x: '-100%' }}
                         whileInView={{ opacity: 1, x: 0, transition: { duration: 0.5, type: 'spring', damping: 7, mass: 0.6 } }}
-                        className="md:text-5xl text-4xl mb-2 w-fit font-normal bg-clip-text bg-gradient-to-r from-secondaryColor to-accentColor text-transparent capitalize mx-auto sm:mx-0"
+                        className="md:text-6xl text-4xl mb-2 w-fit font-normal bg-clip-text bg-gradient-to-r from-primaryText to-primaryColor text-transparent capitalize mx-auto sm:mx-0"
                     >
                         services
                     </motion.h2>
                     <motion.h3 
                         initial={{ opacity: 0 }}
                         whileInView={{ opacity: 1, transition: { delay: 0.5, duration: 0.5 } }}
-                        className="text-secondaryColor text-opacity-[0.8] mt-1 xl:text-lg text-sm font-extralight"
+                        className="text-secondaryText text-opacity-[0.8] mt-1 xl:text-xl text-lg font-extralight"
                     >
-                        Transforming Your Vision into Reality with Expert
-                        Development
+                        Transforming Your Vision into Reality
                     </motion.h3>
                 </div>
 
-                <div className="grid lg:grid-cols-2 md:grid-cols-1 md:gap-4 xl:gap-6 lg:gap-4 gap-10 md:my-16 my-10">
+                <div className="grid grid-cols-12 gap-4 md:my-16 my-10">
                     {servicesCards.map(
-                        ({ title, subtitle, des, icon }, idx) => {
+                        ({ title, des, icon }, idx) => {
                             return (
                                 <motion.div
-                                    initial={{ opacity: 0, x: idx % 2 == 0? '-100%': '100%' }}
-                                    whileInView={{ opacity: 1, x: 0, transition: { duration: 0.5, type: 'ease' } }}
+                                    initial={{ opacity: 0, y: `${(idx + 1) * 100}px` }}
+                                    whileInView={{ opacity: 1, y: 0, transition: { delay: 0.5, duration: 0.5, type: 'ease' } }}
                                     key={idx}
-                                    className="bg-gradient-to-br from-[#06242B] from-50% to-[#193f49] to-100% rounded-3xl xl:p-5 lg:p-3 md:p-4 p-4"
+                                    className={`col-span-4 ${idx === 0? "bg-primaryText border border-primaryColor/25": "bg-primaryText/5"} rounded-3xl xl:px-6 xl:py-10 lg:p-5 p-6`}
                                 >
-                                    <div className="relative flex flex-col md:flex-row items-start justify-between xl:gap-4 lg:gap-3">
-                                        <div className="relative xl:w-[10%] md:mb-0 mb-1">
-                                            <img
-                                                src={icon}
-                                                alt={title}
-                                                className="w-full h-full object-cover object-center"
-                                            />
-                                        </div>
-                                        <div className="flex items-start justify-between flex-col w-full">
-                                            <motion.h3 
-                                                
-                                                className="text-secondaryColor xl:text-2xl md:text-xl text-xl font-medium capitalize mb-1"
-                                            >
-                                                {title}
-                                            </motion.h3>
-                                            <motion.h4 
-                                                className="text-secondaryColor text-opacity-[0.75] lg:text-xs text-sm font-normal capitalize mb-2 line-clamp-2 tracking-wide"
-                                            >
-                                                {subtitle}
-                                            </motion.h4>
-                                            <p className="text-secondaryColor text-opacity-40 w-full lg:text-xs md:text-sm text-[18px] text-light xl:tracking-widest md:tracking-wide tracking-widest lg:leading-[30px] leading-6">
-                                                {des}
-                                            </p>
-                                        </div>
+                                    <div className={`${idx === 0? "bg-primaryColor" : "bg-primaryColor/10"} relative w-20 h-20 rounded-full flex items-center justify-center mb-6`}>
+                                        <img
+                                            src={icon}
+                                            alt={title}
+                                            className="h-9 object-cover object-center"
+                                        />
+                                    </div>
+                                    <div className="flex items-start justify-between flex-col w-full">
+                                        <motion.h3 
+                                            className={`${idx === 0? "text-neutralColor" : "text-primaryText"} xl:text-3xl lg:text-2xl md:text-3xl font-semibold capitalize mb-2`}
+                                        >
+                                            {title}
+                                        </motion.h3>
+                                        <p className={`${idx === 0? "text-neutralColor/75 font-normal" : "text-primaryText/75 font-extralight"} w-full xl:text-lg lg:text-sm lg:leading-6 md:text-lg xl:tracking-wider md:tracking-wide tracking-widest`}>
+                                            {des}
+                                        </p>
                                     </div>
                                 </motion.div>
                             );

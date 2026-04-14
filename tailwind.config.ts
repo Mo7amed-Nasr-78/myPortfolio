@@ -1,4 +1,4 @@
-import { transform } from "next/dist/build/swc";
+// import { transform } from "next/dist/build/swc";
 import type { Config } from "tailwindcss";
 
 const config: Config = {
@@ -12,19 +12,22 @@ const config: Config = {
             center: true,
             padding: {
                 DEFAULT: "0.5rem",
-                sm: "1rem",
+                // sm: "2rem",
                 xl: "4rem",
+                "2xl": "6rem"
             },
         },
         extend: {
             colors: {
-                primaryColor: "#1E1E1E",
-                secondaryColor: "#ECF0F1",
-                accentColor: "#3498DB",
+                primaryColor: "#3498DB",
+                primaryText: "#ECF0F1",
+                secondaryText: "#E5E9EA",
+                bgColor: "#1E1E1E",
                 cherryPie: "#21005D",
                 darkMintGreen: "#2ECC71",
                 lightGold: "#F9DD51",
                 richMaroom: "#A12B5A",
+                neutralColor: "#1E1E1E"
             },
             backgroundImage: {
                 "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
@@ -33,9 +36,9 @@ const config: Config = {
                 hero_image: "url(./Focal_Point.svg)",
             },
             width: {
+                "custom-100/12": "calc(100% - 12rem)",
                 "custom-100/8": "calc(100% - 8rem)",
-                "custom-100/2": "calc(100% - 2rem)",
-                "custom-100/1": "calc(100% - 1rem)",
+                "custom-100/4": "calc(100% - 4rem)",
                 "custom-100/0.5": "calc(100% - 0.5rem)",
                 "custom-50/2": "calc(50% - 2rem)",
                 "custom-50/0.5": "calc(50% - 0.5rem)",
