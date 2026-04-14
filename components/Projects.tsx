@@ -38,7 +38,7 @@ const Projects = () => {
 
                 <div className="w-full h-[50vh] flex flex-col items-center justify-center gap-3 bg-primaryColor/5 rounded-3xl">
                     <img src="./fixing.svg" alt="fixing-icon" className="h-24 animate-bounce"/>
-                    <h2 className="text-xl text-primaryText capitalize">under maintanace ...    </h2>
+                    <h2 className="text-xl text-primaryText capitalize">under maintenance ...    </h2>
                 </div>
                 {/* <div className="grid lg:grid-cols-2 md:grid-col-1 xl:gap-6 lg:gap-3 gap-10">
                     {projectCards.map(
