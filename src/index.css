@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Brand colour: #3498DB (accent). accent-text is a deeper tone of the same hue
+   used for small text on light backgrounds so it stays readable. */
+:root {
+  --bg: #f2f5f8;
+  --surface: #ffffff;
+  --fg: #0d1620;
+  --muted: #4f6071;
+  --line: #d2dbe4;
+  --accent: #3498db;
+  --accent-text: #1f6fa5;
+  --accent-ink: #06121c;
+  --accent-soft: #dcebf6;
+  --code-bg: #0f1d2b;
+  --code-fg: #d7e3ee;
+  --code-muted: #7d93a8;
+  --s-key: #7cc4f0;
+  --s-str: #f2c57c;
+  --s-num: #8eddb2;
+  --s-kw: #f09aae;
+  color-scheme: light;
+}
+
+.dark {
+  --bg: #0a1118;
+  --surface: #101a24;
+  --fg: #e6edf4;
+  --muted: #93a5b7;
+  --line: #213040;
+  --accent: #3498db;
+  --accent-text: #5dade2;
+  --accent-ink: #06121c;
+  --accent-soft: #112638;
+  --code-bg: #070d13;
+  color-scheme: dark;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-bg font-body text-base leading-relaxed text-fg antialiased;
+  }
+  h1,
+  h2,
+  h3 {
+    @apply font-display leading-[1.1] tracking-tight;
+    text-wrap: balance;
+  }
+  :focus-visible {
+    @apply rounded outline outline-2 outline-offset-4 outline-accent;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+  }
+}
